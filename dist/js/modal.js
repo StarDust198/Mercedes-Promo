@@ -7,7 +7,6 @@ modalBtns.forEach(btn => btn.addEventListener('click', () => modal
     .classList.remove('hidden')));
 
 modal.addEventListener('click', (event) => {
-    console.dir(event.target.classList);
     if (event.target && (event.target.classList.contains('modal__close') || event
         .target.classList.contains('overlay'))) {
         modal.classList.add('hidden');
